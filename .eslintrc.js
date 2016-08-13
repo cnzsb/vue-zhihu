@@ -16,6 +16,7 @@ module.exports = {
         semi: ['error', 'never'],
         'object-curly-spacing': ['error', 'never'],
         'comma-dangle': ['error', 'only-multiline'],
+        'global-require': 0,
         // allow debugger during development
         'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0
     }

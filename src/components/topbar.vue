@@ -3,7 +3,7 @@
         <div class="topbar">
             <a class="logo" href="/">知乎</a>
             <div class="search-box">
-                <input type="text" placeholder="搜索你感兴趣的内容...">
+                <input type="text" class="search-box-content" placeholder="搜索你感兴趣的内容...">
                 <button type="button" class="search-box-button"></button>
             </div>
             <ul class="top-nav">
@@ -65,6 +65,58 @@
                 color: #fff;
                 font-size: 32px;
                 text-indent: -9999px;
+                vertical-align: middle;
+            }
+
+            .search-box {
+                position: relative;
+                display: inline-block;
+                width: 367px;
+                height: 33px;
+                margin-left: 15px;
+                box-shadow: inset 0 1px 3px rgba(0,0,0,.2),
+                            0 1px 0 rgba(255,255,255,.1);
+                vertical-align: middle;
+
+                &-content {
+                     width: 100%;
+                     height: 33px;
+                     padding: 7px 50px 7px 10px;;
+                     background-color: #e1eaf2;
+                     border-radius: 4px;
+                     transition: all .2s ease-in-out;
+                     font-size: 14px;
+                     line-height: 17px;
+                     color: #49525c;
+
+                     &:focus {
+                          background-color: #fff;
+                          box-shadow: inset 0 1px 3px rgba(0,0,0,.2),
+                                      0 1px 15px rgba(255,255,255,.3);
+                      }
+                }
+
+                &-button {
+                     position: absolute;
+                     top: 0;
+                     bottom: 0;
+                     right: 0;
+                     width: 40px;
+                     background: #0767c8;
+                     background: linear-gradient(to bottom,#086ed5,#055db5);
+                     border-bottom: 1px solid #044e97;
+                     border: 1px solid #045bb2;
+                     border-radius: 0 4px 4px 0;
+
+                     &::before {
+                          content: '';
+                          display: block;
+                          width: 15px;
+                          height: 15px;
+                          margin: 0 auto;
+                          background: url("../assets/zhihu-sprites2.png") -82px 0 no-repeat;
+                     }
+                 }
             }
         }
     }

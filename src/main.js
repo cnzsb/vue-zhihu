@@ -7,7 +7,8 @@ const router = new VueRouter({
     hashbang: true,
     history: false,
     saveScrollPosition: true,
-    transitionOnLoad: true
+    transitionOnLoad: true,
+    linkActiveClass: 'active'
 })
 
 router.map({

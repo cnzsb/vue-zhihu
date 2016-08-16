@@ -14,6 +14,6 @@
     }
 </script>
 
-<style lang="scss">
-    @import "src/scss/main";
+<style lang="scss" rel="stylesheet/scss">
+    @import "scss/main";
 </style>

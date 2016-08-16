@@ -37,7 +37,7 @@
         }
     }
 </script>
-<style lang="scss" scoped>
+<style lang="scss" rel="stylesheet/scss" scoped>
     .topbar-wrap {
         position: fixed;
         top: 0;
@@ -50,7 +50,7 @@
         background: linear-gradient(to bottom, #086ed5, #055db5);
         border-bottom: 1px solid #044e97;
         box-shadow: 0 1px 2px rgba(0, 0, 0, .25),
-                    inset 0 1px 0 rgba(255, 255, 255, .15);
+        inset 0 1px 0 rgba(255, 255, 255, .15);
 
         .topbar {
             width: 960px;
@@ -75,51 +75,50 @@
                 height: 33px;
                 margin-left: 15px;
                 box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2),
-                            0 1px 0 rgba(255, 255, 255,.1);
+                0 1px 0 rgba(255, 255, 255, .1);
                 vertical-align: middle;
 
                 &-content {
-                     width: 100%;
-                     height: 33px;
-                     line-height: 33px;
-                     padding: 7px 50px 7px 10px;;
-                     background-color: #e1eaf2;
-                     border: 1px solid #045bb2;
-                     border-radius: 4px;
-                     box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2),
-                                 0 1px 0 rgba(255, 255, 255, .1);
-                     transition: all .2s ease-in-out;
-                     font-size: 14px;
-                     color: #49525c;
+                    width: 100%;
+                    height: 33px;
+                    line-height: 33px;
+                    padding: 7px 50px 7px 10px;;
+                    background-color: #e1eaf2;
+                    border: 1px solid #045bb2;
+                    border-radius: 4px;
+                    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2),
+                    0 1px 0 rgba(255, 255, 255, .1);
+                    transition: all .2s ease-in-out;
+                    font-size: 14px;
+                    color: #49525c;
 
-                     &:focus {
-                          background-color: #fff;
-                          box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2),
-                                      0 1px 15px rgba(255, 255, 255, .3);
-                      }
+                    &:focus {
+                        background-color: #fff;
+                        box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2),
+                        0 1px 15px rgba(255, 255, 255, .3);
+                    }
                 }
 
                 &-button {
-                     position: absolute;
-                     top: 0;
-                     bottom: 0;
-                     right: 0;
-                     width: 40px;
-                     background: #0767c8;
-                     background: linear-gradient(to bottom,#0e7bef,#0d73da);
-                     border-bottom: 1px solid #044e97;
-                     border: 1px solid #045bb2;
-                     border-radius: 0 4px 4px 0;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    width: 40px;
+                    background: #0767c8;
+                    background: linear-gradient(to bottom, #0e7bef, #0d73da);
+                    border: 1px solid #045bb2;
+                    border-radius: 0 4px 4px 0;
 
-                     &::before {
-                          content: '';
-                          display: block;
-                          width: 15px;
-                          height: 15px;
-                          margin: 0 auto;
-                          background: url("../assets/zhihu-sprites2.png") -82px 0 no-repeat;
-                     }
-                 }
+                    &::before {
+                        content: '';
+                        display: block;
+                        width: 15px;
+                        height: 15px;
+                        margin: 0 auto;
+                        background: url("../assets/zhihu-sprites2.png") -82px 0 no-repeat;
+                    }
+                }
             }
 
             .top-nav {
@@ -127,31 +126,30 @@
                 margin-left: 18px;
 
                 > li {
-                      display: inline-block;
+                    display: inline-block;
 
-                      > a {
-                          display: block;
-                          width: 54px;
-                          height: 46px;
-                          line-height: 46px;
-                          text-align: center;
-                          display: block;
-                          color: #f2f4f5;
-                          text-shadow: 0 1px 1px rgba(0,0,0,.12);
-                          font-size: 14px;
+                    > a {
+                        display: block;
+                        width: 54px;
+                        height: 46px;
+                        line-height: 46px;
+                        text-align: center;
+                        color: #f2f4f5;
+                        text-shadow: 0 1px 1px rgba(0, 0, 0, .12);
+                        font-size: 14px;
 
-                          &.active {
-                              background: #075fb6;
-                              background: linear-gradient(to bottom,#055fb8,#095fb3);
-                              box-shadow: inset 0 0 2px rgba(0, 0, 0, .12);
-                          }
+                        &.active {
+                            background: #075fb6;
+                            background: linear-gradient(to bottom, #055fb8, #095fb3);
+                            box-shadow: inset 0 0 2px rgba(0, 0, 0, .12);
+                        }
 
-                          &:visited,
-                          &:active {
-                              color: #eee;
-                          }
-                      }
-                  }
+                        &:visited,
+                        &:active {
+                            color: #eee;
+                        }
+                    }
+                }
             }
         }
     }
